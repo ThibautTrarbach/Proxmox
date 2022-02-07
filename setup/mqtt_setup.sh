@@ -48,10 +48,8 @@ apt-get -qqy upgrade &>/dev/null
 
 echo -e "${CHECKMARK} \e[1;92m Installing Dependencies... \e[0m"
 apt-get update &>/dev/null
-apt-get -qqy install \
-    curl \
-    gnupg \
-    sudo &>/dev/null
+echo -e "${CHECKMARK} \e[1;92m TOTO Installing Dependencies... \e[0m"
+apt-get -qqy install curl gnupg  sudo &>/dev/null
 
 echo -e "${CHECKMARK} \e[1;92m Installing Mosquitto MQTT Broker.. \e[0m"
 wget http://repo.mosquitto.org/debian/mosquitto-repo.gpg.key &>/dev/null
