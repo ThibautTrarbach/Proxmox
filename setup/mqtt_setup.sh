@@ -46,7 +46,7 @@ echo -e "${CHECKMARK} \e[1;92m Updating Container OS... \e[0m"
 apt-get update &>/dev/null
 apt-get -qqy upgrade &>/dev/null
 
-echo -e "${CHECKMARK} \e[1;92m Installing Dependencies... \e[0m"
+echo -e "${CHECKMARK} \e[1;92m Updating Container... \e[0m"
 apt-get -qqy install curl gnupg sudo &>/dev/null
 
 echo -e "${CHECKMARK} \e[1;92m Installing Mosquitto MQTT Broker.. \e[0m"
